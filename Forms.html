@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/food">
+      <label for="userName">Kullanıcı Adı Giriniz:</label>
+      <input type="text" placeholder="Kullanıcı Adı" id="userName" />
+      <label for="password">Şifre Giriniz:</label>
+      <input type="password" placeholder="Şifre" id="password" />
+      <lable for="color">Renk seçiniz:</lable>
+      <input type="color" placeholder="color" id="color" />
+      <label for="number">Sayı Giriniz:</label>
+      <input type="number" placeholder="number" id="number" /> 
+      <button type="submit">submit</button>
+      <input type="submit" value="gönder!!"/>  
+    </form>
+<hr/>
+<form action="https://www.reddit.com/search/">
+<label for="reddit">reddit'te ara</label>
+<input type="text" id="reddit" name="q"/>
+<button>ara</button>
+</form>
+<hr/>
+<form action="https://www.google.com/search">
+    <label for="google">google'da ara</label>
+    <input type="text" name="q" id="google">
+    <button>ara</button>
+    <hr/>
+</form>
+<form action="https://www.youtube.com/results"> 
+<label for="youtube">youtube ara</label>
+<input type="text" name="search_query" id="youtube">
+<button>ara</button>
+</form>
+<hr/>
+  <h2>Daha fazla input</h2>
+<form action="/birds">
+<input type="checkbox" name="tos" id="agree" checked/>
+<label for="agree">kabul ediyorum</label>
+<p>
+<lable for="xs">xs:</lable>
+<input type="radio"name="size"id="xs"value="xs"/>
+<label for="s">s:</lable>
+<input type="radio"name="size"id="s"value="s"/>
+<label for="m">m:</label>
+<input type="radio"name="size"id="m"value="m"/>
+</p>
+<p>
+<label for="animal">Favori Hayvanınız Seçiniz..
+<select name="animal"id="animal">
+  <option value="bird">Kuş</option>
+  <option value="fish"selected>Balık</option> 
+  <option value="dog"Köpek></option> 
+</select>
+</label>
+</p>
+<p>
+<label for="peynir">peynir miktarı:</label>
+<input type="range" name="peynir" ıd="peynir" min="1" max="100"step="7" value="75"/>
+</p>
+<p>
+  <div>
+    <label for="commnet">Özel istek:</label><br/>
+    <textarea placeholder="Yorumunuzu yazınız" name="commnet" ıd="commnet" cols="20" rows="10"></textarea>
+  </div>
+</P>
+<button>Yolla</button>
+</form>
+<form>
+<h2>Validation</h2>
+<form action="/spare">
+<label for="fisrt">İsim Giriniz</label>
+<input type="text" name="fisrt"ıd="fisrt" required minlength="5" maxlength="20">
+<button>submit</button>
+</form>
+  </body>
+</html>
